@@ -1,56 +1,35 @@
 document.querySelector("#form").addEventListener("submit", function() {
-  var jobtitle = document.querySelector("#jobtitle").value;
-  var jobprofile = document.querySelector("#jobprofile").value;
-  var qualifications = document.querySelector("#qualifications").value;
-  var requiredskills = document.querySelector("#requiredskills").value;
-  var jobtype = document.querySelector("#jobtype").value;
-  var experience = document.querySelector("#experience").value;
-    var education = document.querySelector("#education").value;
-    var jobdescription = document.querySelector("#jobdescription").value;
-    var date = document.querySelector("#date").value;
-    var submit = document.querySelector("#submit").value;
+  var title = document.querySelector("#title").value;
+  var description = document.querySelector("#description").value;
+  var requirement = document.querySelector("#requirement").value;
+  var specification = document.querySelector("#specification").value;
+  var deadline = document.querySelector("#deadline").value;
   var template = `
     <div class="container" id="head">
                 <div class="mb-5">
-                    <h5 class="team">${jobtitle}
+                    <h5 class="team">${title}
                         <span class="float-right"> <i class="fa fa-arrow-left mr-2"></i>BACK TO OPENINGS</span></h5>
                     <p class="mb--8"> Lagos.</p>
                 </div>
 
                 <div>
 
-                    <div class="mb-3">${jobdescription} </div>
+                    <div class="mb-3">${description} </div>
                     <div class="mb-3">
-                        <h5 class="textdark">Job Profile </h5>
+                        <h5 class="textdark">Job Requirement:</h5>
 
-                        <p> ${jobprofile}</p>
+                        <p> ${requirement}</p>
                     </div>
                     <div class="mb-3">
-                        <h5 class="textdark"> Qualification:</h5>
-                        <p>${qualifications}
+                        <h5 class="textdark">Job Specification:</h5>
+                        <p>${specification}
                         </p>
                     </div>
+                    
+                    
                     <div class="mb-3">
-                        <h5 class="textdark">Required Skills:</h5>
-                        <p>${requiredskills}</p>
-                    </div>
-                    <div class="mb-3">
-                        <h5 class="textdark">Job Type:</h5>
-                        <p> ${jobtype} </p>
-                    </div>
-                    <div class="mb-3">
-                        <h5 class="textdark">Experience:</h5>
-                        <p>  ${experience}</p>
-                    </div>
-                    <div class="mb-3">
-                        <h5 class="textdark">Education:</h5>
-                        <p>${education} </p>
-                    </div>
-                    <div class="mb-3">
-                        <p>Application close on <span class="textdark">${date} </br></span>
-                        <div>
-                            <a class="btn btn-success" href="${submit}" id="btn-apply">Apply</a>
-                        </div>
+                        <p>Application close on <span class="textdark">${deadline} </br></span>
+                        
                     </div>
                 </div>
             </div>
