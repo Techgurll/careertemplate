@@ -29,6 +29,7 @@ document.querySelector("#form").addEventListener("submit", function() {
                     
                     <div class="mb-3">
                         <p>Application close on <span class="textdark">${deadline} </br></span>
+                        To apply,kindly send an email to <span class="textdanger">career@riby.me<span></p>
                         
                     </div>
                 </div>
