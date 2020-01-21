@@ -42,7 +42,7 @@ function downloadTemplate(html) {
 
   var link = document.createElement("a");
   link.setAttribute("href", URL.createObjectURL(fileBlob));
-  link.setAttribute("download", `${jobtitle.value}.txt`);
+  link.setAttribute("download", `${title.value}.txt`);
   //link.appendChild(document.createTextNode("Save file"));
     document.body.appendChild(link);
     link.click()
